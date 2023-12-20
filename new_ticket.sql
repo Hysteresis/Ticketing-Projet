@@ -6,4 +6,8 @@ VALUES
     ('Question sur la facturation', 'Besoin de clarification sur une facture', 'Nouveau', 'Basse', 'Finance', 'Sophia Wilson', '2023-12-27 08:20:00'),
     ('Demande de congé', 'Demander des jours de congé', 'En attente', 'Urgente', 'Ressources humaines', 'Matthew Miller', '2023-12-28 13:10:00'),
     ('Problème d\'accès au fichier', 'Impossible d\'accéder à un fichier partagé', 'En cours', 'Moyenne', 'Technique', 'Olivia White', '2023-12-29 09:50:00'),
-    ('Réclamation sur un produit', 'Problème avec un produit livré', 'Ouvert', 'Haute', 'Service client', 'Daniel Lee', '2023-12-30 14:15:00');
+    ('Réclamation sur un produit', 'Problème avec un produit livré', 'Ouvert', 'Haute', 'Service client', 'Daniel Lee', '2023-12-30 14:15:00'),
+    ('Problème de connexion', 'Je ne peux pas me connecter à mon compte', 'Ouvert', 'Haute', 'Technique', 'John Doe', '2023-12-21 10:30:00'),
+    ('Problème d\'affichage', 'L\'interface utilisateur ne s\'affiche pas correctement', 'En cours', 'Moyenne', 'Design', 'Jane Smith', '2023-12-22 14:45:00'),
+    ('Erreur dans le traitement des paiements', 'Les paiements en ligne ne fonctionnent pas', 'Nouveau', 'Urgente', 'Finance', 'Bob Johnson', '2023-12-23 09:15:00');
+
