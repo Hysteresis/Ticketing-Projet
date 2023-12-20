@@ -1,6 +1,6 @@
 
 
-<table class="table" id="myTable">
+<table class="table  table-hover table-striped" id="myTable">
   <thead>
     <tr>
       <th scope="col">#</th>
