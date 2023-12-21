@@ -1,3 +1,25 @@
+
+<?php
+session_start();
+
+// if (!isset($_SESSION['utilisateur'])) {
+//      header('Location: view/login.php');
+//     exit;
+// }
+
+// require('model/bddConnexion.php');
+
+// if (($_SESSION['utilisateur']['role'] == "CLI")) {
+//     $searchedId = $_SESSION['utilisateur']['Id_utilisateur'];
+//     $sql_request = " SELECT * FROM ticket WHERE Id_utilisateur = :searchedId ";
+//     $req_request = $bdd->query($sql_request);
+//     $res_request = $req_request->fetch(PDO::FETCH_ASSOC);
+//     $array = $res_request;
+//     echo $array;
+// }
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,34 +34,29 @@
     <title>Accueil</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Ticketing</h1>
-            </div>
-        </div>
-    </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col">
+<?php require "./view/navbar.php"; ?>
+
+
+        <!-- JS plugin sort table -->
         <script>
-    $(document).ready(function() {
-        $('#myTable').DataTable();
-    });
-</script>
+            $(document).ready(function() {
+                $('#myTable').DataTable();
+            });
+        </script>
 
 
         <?php 
-
-            require "./controller/UserController.php"; 
-            require "./view/users.php";
-
+            
+            if(isset($_GET['uc'])){
+                include './controller/'  . $_GET['uc'] . '_controller.php';
+            } else {
+                include './controller/home_controller.php';
+            }
+           
         ?>
 
-        </div>
-    </div>
-</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

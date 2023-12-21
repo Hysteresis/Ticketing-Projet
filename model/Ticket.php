@@ -1,6 +1,6 @@
 <?php 
 
-class UserModel {
+class Ticket {
     private $db;
 
     public function __construct(){
@@ -8,12 +8,6 @@ class UserModel {
         $this->db->connect();
     }
 
-    public function getUsers(){
-        $query = "SELECT * FROM utilisateur";
-        $stmt = $this->db->connect()->query($query);
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
 
     public function getSortedTickets($orderBy)
     {
