@@ -1,18 +1,18 @@
 
 
-<table class="table  table-hover table-striped" id="myTable">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">titre</th>
-      <th scope="col">descriptif</th>
-      <th scope="col">Statut</th>
-      <th scope="col">Priorité</th>
-      <th scope="col">Categorie</th>
-      <th scope="col">assignation</th>
-      <th scope="col">date</th>
-    </tr>
-  </thead>
+<table class="table table-hover table-striped" id="myTable">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Titre</th>
+        <th scope="col">Descriptif</th>
+        <th scope="col">Statut</th>
+        <th scope="col">Priorité</th>
+        <th scope="col">Categorie</th>
+        <th scope="col">Assignation</th>
+        <th scope="col">Date</th>
+        </tr>
+    </thead>
   <tbody>
     <?php
         foreach ($sortedTickets as $ticket) {
