@@ -15,6 +15,21 @@
                 <li class="nav-item">
                     <a class="nav-link" href="?uc=login">Se connecter</a>
                 </li>
+                <?php
+                
+                    if(isset($_SESSION['utilisateur'])){
+                        echo "Bienvenue " . $_SESSION['utilisateur']['email'];
+                        ?>
+                        <a href="./model/logout.php">Se deconnecter</a>
+
+                        <?php
+
+                    } else {
+                        echo "non connecté " ;
+                        
+
+                    }
+                ?>
             </ul>
         </div>
     </div>
