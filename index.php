@@ -46,12 +46,7 @@ session_start();
                 include './controller/home_controller.php';
             }
             
-            
-            // if(isset($_SESSION['utilisateur'])){
-            //     var_dump($_SESSION['utilisateur']);
-            // } else {
-            //     echo "pas de session activée";
-            // }
+
            
         ?>
 

@@ -3,7 +3,7 @@
 // session_start();
 
 if (!isset($_SESSION['utilisateur'])) {
-     header('Location: view/login.php');
+     header('Location: ?uc=login');
     exit;
 }
 
