@@ -23,10 +23,10 @@
                         <?php if (!empty($array)) {
                             foreach ($array as $ticket) : ?>
                             <tr>
-                                <th><?= print_r($ticket['Id_ticket']) ?></th>
-                                <td><?= print_r($ticket['descriptif']) ?></td>
-                                <td><?= print_r($ticket['datetime']) ?></td>
-                                <td><?= print_r($ticket['statut']) ?></td>
+                                <th><p><?= $ticket['Id_ticket'] ?></p></th>
+                                <td><p><?= $ticket['descriptif'] ?></p></td>
+                                <td><p><?= $ticket['datetime'] ?></p></td>
+                                <td><p><?= $ticket['statut'] ?></p></td>
                             </tr>
                         <?php endforeach;
                         } else {
