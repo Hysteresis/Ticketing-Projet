@@ -1,5 +1,5 @@
 <?php
-echo "ticket controller ok";
+// echo "ticket controller ok";
 require_once(__DIR__ . '/../model/Database.php');
 require_once(__DIR__ . '/../model/Ticket.php');
 

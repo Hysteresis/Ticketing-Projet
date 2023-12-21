@@ -33,11 +33,19 @@ session_start();
 
         <?php 
             
-            if(isset($_GET['uc'])){
-                include './controller/'  . $_GET['uc'] . '_controller.php';
+            if(isset($_GET['uc'])) {
+                if ($_GET['uc'] == "detailclient") {
+          
+                    include './controller/detailclient_controller.php';
+                } else {
+                 
+                    include './controller/' . $_GET['uc'] . '_controller.php';
+                }
             } else {
+              
                 include './controller/home_controller.php';
             }
+            
             
             // if(isset($_SESSION['utilisateur'])){
             //     var_dump($_SESSION['utilisateur']);

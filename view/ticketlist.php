@@ -23,10 +23,12 @@
                         <?php if (!empty($array)) {
                             foreach ($array as $ticket) : ?>
                             <tr>
-                                <th><p><?= $ticket['Id_ticket'] ?></p></th>
-                                <td><p><?= $ticket['descriptif'] ?></p></td>
-                                <td><p><?= $ticket['datetime'] ?></p></td>
-                                <td><p><?= $ticket['statut'] ?></p></td>
+
+                                <th><a href="?uc=detailclient&ticket_id=<?= $ticket['Id_ticket'] ?>"><?= $ticket['Id_ticket'] ?></a></th>
+                                <td><a><?= $ticket['descriptif'] ?></a></td>
+                                <td><a><?= $ticket['datetime'] ?></a></td>
+                                <td><a><?= $ticket['statut'] ?></a></td>
+
                             </tr>
                         <?php endforeach;
                         } else {

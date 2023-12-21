@@ -26,4 +26,4 @@ $array = $stmt->get_result();
 
 
 
-include './view/newticket.php'; 
+include './view/ticketlist.php'; 
