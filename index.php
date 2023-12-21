@@ -1,23 +1,8 @@
-
 <?php
 session_start();
 
-// if (!isset($_SESSION['utilisateur'])) {
-//      header('Location: view/login.php');
-//     exit;
-// }
-
-// require('model/bddConnexion.php');
-
-// if (($_SESSION['utilisateur']['role'] == "CLI")) {
-//     $searchedId = $_SESSION['utilisateur']['Id_utilisateur'];
-//     $sql_request = " SELECT * FROM ticket WHERE Id_utilisateur = :searchedId ";
-//     $req_request = $bdd->query($sql_request);
-//     $res_request = $req_request->fetch(PDO::FETCH_ASSOC);
-//     $array = $res_request;
-//     echo $array;
-// }
 ?>
+
 
 
 <!DOCTYPE html>
@@ -61,6 +46,11 @@ session_start();
             // }
            
         ?>
+
+
+
+
+    
 
 
 

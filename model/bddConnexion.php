@@ -7,10 +7,10 @@ $pass       =   "";
 
     try
     {
-        var_dump($dbname );
+        // var_dump($dbname );
         $bdd = new PDO('mysql:host=' . $host . ';dbname=' . $dbname, $user, $pass);
         $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "<br>bddConnexion  ok<br>";
+        // echo "<br>bddConnexion  ok<br>";
     }
     catch(PDOException $error)
     {
